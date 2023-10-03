@@ -16,10 +16,9 @@ push.setVapidDetails('mailto:test@code.co.uk',vapidKeys.publicKey,vapidKeys.priv
 
 let sub = {
     endpoint:"https://fcm.googleapis.com/fcm/send/dFhPz4YLt-I:APA91bHKOPB1qHGLtHIs5S52JSWPble_O95qAtfiQ0zKIpa1GCaSuOw9x13Gv5PA5h7aZlwlTgBisH9cOyW4pt6BbiTd2bsUOJiT16zqAB2ZT2eR1qUx4uJ3x3FFyOofy4lbtaEeu6vk",
-    expirationTime:null,
-    keys:{
-        p256dh:"BLQ9OdEJLeJnPAd3ZN_o0uqgSpq_kSXE7db-onmK3CC_RlorDpvtzd8rXhHDrlLQUDaJ8k43oH6Xnm71O5qfjuU",
-        auth:"5KqAMU3PiNOctOY2ZjmS0Q"
-    }} ;
+expirationTime:null,
+keys:
+{p256dh:"BLQ9OdEJLeJnPAd3ZN_o0uqgSpq_kSXE7db-onmK3CC_RlorDpvtzd8rXhHDrlLQUDaJ8k43oH6Xnm71O5qfjuU",
+auth:"5KqAMU3PiNOctOY2ZjmS0Q"}} ;
 
 push.sendNotification(sub, 'test message')
