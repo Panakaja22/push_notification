@@ -23,6 +23,6 @@ self.addEventListener('push',function(e){
     );
 })
 
-self.addEventListener('push',()=>{
-    self.ServiceWorkerRegistration.sendNotification('test message',{})
-});
+self.addEventListener('push', () => {
+    self.registration.showNotification('Hello world!', options);
+  });
