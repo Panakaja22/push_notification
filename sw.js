@@ -22,8 +22,8 @@ self.addEventListener('push',function(e){
     }
         ]
     };
-    e.waitUntil(
-        self.ServiceWorkerRegistration.showNotification('Hello world!',options)
-    );
+    // e.waitUntil(
+    //     self.ServiceWorkerRegistration.showNotification('Hello world!',options)
+    // );
 
 })
