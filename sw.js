@@ -1,6 +1,6 @@
-// self.addEventListener('push',()=>{
-//     self.ServiceWorkerRegistration.sendNotification('test message',{})
-// });
+self.addEventListener('push',()=>{
+    self.ServiceWorkerRegistration.sendNotification('test message',{})
+});
 
 self.addEventListener('push',function(e){
     var options = {
